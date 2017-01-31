@@ -1,0 +1,53 @@
+<VisualMicro>
+  <Program Name="BlinkWithSerialMessages" Ext=".ino" Location="C:\Users\kowald.brian\Documents\Arduino\BlinkWithSerialMessages">
+    <Compile CompilerErrors="0" ConfigurationName="Debug" StopOnError="False" OptimiseLibs="True" OptimiseCore="True" BuildPath="C:\Users\kowald.brian\AppData\Local\VMicro\Arduino\Builds\BlinkWithSerialMessages\uno" ReportDisassembledView="1" SketchName="BlinkWithSerialMessages" ReportDigitalPins="0" ReportAnalogPins="0" ReportI2C="0" ReportFreeMemory="0" IncludeDebug="1" LastDebugPreProcessorDefinitions="VM_DEBUG;VM_DEBUG_ENABLE 1;VM_DEBUG_BANDWIDTH_THROTTLE_MS 80;VM_DEBUGGER_TYPE_HARDWARESERIAL 0;VM_DEBUGGER_TYPE_SOFTWARESERIAL 1;VM_DEBUGGER_TYPE_FASTSERIAL 2;VM_DEBUGGER_TYPE_USB 3;VM_DEBUGGER_TYPE_TEENSY 4;VM_DEBUGGER_TYPE VM_DEBUGGER_TYPE_HARDWARESERIAL;" IncludesDebug="1" IsCompiled="1" />
+    <Platform Name="Arduino">
+      <Board Name="uno" Description="Arduino Uno" CoreFolder="C:\Program Files (x86)\Arduino\hardware\arduino\cores\arduino" VariantFullPath="C:\Program Files (x86)\Arduino\hardware\arduino\variants\standard" McuIdePath="C:\Program Files (x86)\Arduino" name="Arduino Uno" upload.protocol="arduino" upload.maximum_size="32256" upload.speed="115200" bootloader.low_fuses="0xff" bootloader.high_fuses="0xde" bootloader.extended_fuses="0x05" bootloader.path="optiboot" bootloader.file="optiboot_atmega328.hex" bootloader.unlock_bits="0x3F" bootloader.lock_bits="0x0F" build.mcu="atmega328p" build.f_cpu="16000000L" build.core="arduino" build.variant="standard" runtime.ide.path="C:\Program Files (x86)\Arduino" build.system.path="C:\Program Files (x86)\Arduino\hardware\arduino\system" software="ARDUINO" runtime.ide.version="105" build.core.vmresolved="C:\Program Files (x86)\Arduino\hardware\arduino\cores\arduino" build.core.parentfolder.vmresolved="C:\Program Files (x86)\Arduino\hardware\arduino\cores" build.core.coresparentfolder.vmresolved="C:\Program Files (x86)\Arduino\hardware\arduino" vm.core.include="arduino.h" vm.boardsource.path="C:\Program Files (x86)\Arduino\hardware\arduino" vm.boardsource.name="boards.txt" vm.platformname.name="" build.variant.vmresolved="C:\Program Files (x86)\Arduino\hardware\arduino\variants\standard" compiler.path="C:\Program Files (x86)\Arduino\hardware\tools\avr\bin\" includes=" -I&quot;C:\Program Files (x86)\Arduino\hardware\arduino\cores\arduino&quot;  -I&quot;C:\Program Files (x86)\Arduino\hardware\arduino\variants\standard&quot; " build.path="C:\Users\kowald.brian\AppData\Local\VMicro\Arduino\Builds\BlinkWithSerialMessages\uno" build.project_name="BlinkWithSerialMessages" build.variant.path="C:\Program Files (x86)\Arduino\hardware\arduino\variants\standard" archive_file="core.a" object_file="&quot;C:\Users\kowald.brian\AppData\Local\VMicro\Arduino\Builds\BlinkWithSerialMessages\uno\BlinkWithSerialMessages.cpp.o&quot;" source_file="&quot;C:\Users\kowald.brian\AppData\Local\VMicro\Arduino\Builds\BlinkWithSerialMessages\uno\BlinkWithSerialMessages.cpp&quot;" object_files="&quot;C:\Users\kowald.brian\AppData\Local\VMicro\Arduino\Builds\BlinkWithSerialMessages\uno\BlinkWithSerialMessages.cpp.o&quot; " />
+    </Platform>
+    <Debug DebugMode="Full" DebugEnabled="1" />
+    <VCCodeModel>
+      <VCCodeMacros />
+    </VCCodeModel>
+    <BreakPoints>
+      <BreakPoint Index="1" Name="BlinkWithSerialMessages.ino, line 22" Id="1ee0d160-b3bf-4a1e-8935-34c520d83299" Enabled="1" Message="LED on" MessageTextType="0" PreProcessedMessage="LED on" Condition="" ConditionType="1" CurrentHits="0" File="C:\Users\kowald.brian\Documents\Arduino\BlinkWithSerialMessages\BlinkWithSerialMessages.ino" FileLine="22" FileColumn="1" FunctionName="loop()" FunctionLineOffset="3" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C++" LocationType="3" Tag="&lt;vmbp Id='1ee0d160-b3bf-4a1e-8935-34c520d83299'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="0">
+        <Source>15	  pinMode(led, OUTPUT);     
+16	  //Serial.begin(19200);	
+17	}
+18	
+19	// the loop routine runs over and over again forever:
+20	void loop() {
+21	  //Serial.println("led on");
+--&gt;22	  digitalWrite(led, HIGH);   // turn the LED on (HIGH is the voltage level)
+23	  delay(100);               // wait for a second
+24	  //Serial.println("led off");
+25	  digitalWrite(led, LOW);    // turn the LED off by making the voltage LOW
+26	  delay(1000);               // wait for a second
+27	  
+28	  ++loop_counter;
+29	  //Serial.print("Loop counter = ");
+30	  //Serial.println(loop_counter);
+31	
+</Source>
+      </BreakPoint>
+      <BreakPoint Index="2" Name="BlinkWithSerialMessages.ino, line 25" Id="0422cf7a-d07a-4aed-9f81-5556496d852e" Enabled="1" Message="LED low" MessageTextType="0" PreProcessedMessage="LED low" Condition="" ConditionType="1" CurrentHits="0" File="C:\Users\kowald.brian\Documents\Arduino\BlinkWithSerialMessages\BlinkWithSerialMessages.ino" FileLine="25" FileColumn="1" FunctionName="loop()" FunctionLineOffset="6" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C++" LocationType="3" Tag="&lt;vmbp Id='008ac3d5-5cc3-428c-a15f-fba6b9cfec1c'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="0">
+        <Source>18	
+19	// the loop routine runs over and over again forever:
+20	void loop() {
+21	  //Serial.println("led on");
+22	  digitalWrite(led, HIGH);   // turn the LED on (HIGH is the voltage level)
+23	  delay(100);               // wait for a second
+24	  //Serial.println("led off");
+--&gt;25	  digitalWrite(led, LOW);    // turn the LED off by making the voltage LOW
+26	  delay(1000);               // wait for a second
+27	  
+28	  ++loop_counter;
+29	  //Serial.print("Loop counter = ");
+30	  //Serial.println(loop_counter);
+31	
+32	}
+33	
+</Source>
+      </BreakPoint>
+    </BreakPoints>
+  </Program>
+</VisualMicro>

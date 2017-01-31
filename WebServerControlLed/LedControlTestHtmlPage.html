@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	
+	<title>Two buttons to control an LED</title>
+	<style type="text/css">
+		.label
+		{
+			font-size: 40px;
+			text-align:center;
+		}
+		
+		button 
+		{
+			width: 150px;
+			height: 100px;
+			font-size: 40px;
+			-webkit-appearance: none;
+			 background-color:white;
+        }
+	</style>
+	
+	<script type="text/javascript">
+    	function OnButtonClicked(parm) {
+    		//alert("You selected " + parm);
+			window.location.href="LedControlTestHtmlPage.html?" + parm;
+		}
+	</script> 
+	
+</head>
+
+<body style="background-color:orange">
+	<div class="label">
+		Brian's LED Control<br/><br/>
+		<button onclick="OnButtonClicked('1');">On</button><br/>
+		<div style="height:20px"></div>
+		<button onclick="OnButtonClicked('2');">Off</button>
+	</div>			
+</body>
+</html>
